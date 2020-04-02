@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .comments {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+    padding: 5px;
+
+    .comment {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 5px;
+      text-align: left;
+      position: relative;
+
+      .text {
+        width: 85%;
+      }
+
+      .display-item {
+        margin: 5px;
+      }
+
+      .display-item:first-child {
+        margin-left: 0px;
+      }
+
+      .display-item:last-child {
+        font-size: small;
+        color: gray;
+      }
+
+      .display-item {
+        margin-left: 10px;
+      }
+
+      button {
+        position: absolute;
+        right: 0px;
+      }
+    }
+  }
+
+  .create-comment {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: medium;
+
+    h1 {
+      align-self: flex-start;
+      padding: 5px;
+      padding-bottom: 0;
+    }
+
+    .form-item {
+      display: flex;
+      flex-direction: row;
+      padding: 8px;
+      align-items: center;
+
+      label {
+        width: 20%;
+        text-align: left;
+      }
+
+      input, textarea {
+        width: 80%;
+        padding: 5px;
+        border: solid;
+        border-width: thin;
+        border-color: lightgray;
+        font-size: medium;
+      }
+
+      textarea {
+        min-height: 60px;
+        text-align: left;
+      }
+    }
+
+    button {
+      font-size: medium;
+      padding: 5px;
+    }
+  }
+}
+
+.error {
+  border: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+.errorText {
+  color: red;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
