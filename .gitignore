@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-single-stop-mock-comment-api/node_modules
+/single-stop-mock-comment-api/node_modules
 
 # testing
 /coverage
