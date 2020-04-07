@@ -14,10 +14,8 @@ function App(props) {
 	const [errors, setErrors] = useState({});
 
 	useEffect(() => {
-		if (!loading && !comments.length) {
-			dispatch(commentsAction());
-		}
-	});
+		dispatch(commentsAction());
+	}, []);
 
 	const commentsDisplay = comments.map(({id, email, body, time, date}, index) => {
 		return (
