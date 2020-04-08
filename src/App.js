@@ -7,7 +7,7 @@ import {commentsDeleteAction} from "./actions/commentsDeleteAction";
 import {commentsCreateAction} from "./actions/commentsCreateAction";
 
 function App(props) {
-	const {comments, loading} = useSelector(state => state.comments) || [];
+	const {comments} = useSelector(state => state.comments) || [];
 	const dispatch = useDispatch();
 	const emailRef = useRef(null);
 	const bodyRef = useRef(null);
@@ -15,7 +15,7 @@ function App(props) {
 
 	useEffect(() => {
 		dispatch(commentsAction());
-	}, []);
+	}, [dispatch]);
 
 	const commentsDisplay = comments.map(({id, email, body, time, date}, index) => {
 		return (
