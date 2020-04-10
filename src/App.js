@@ -2,9 +2,9 @@ import React, {useEffect, useRef, useState} from 'react';
 import './App.scss';
 
 import {useSelector, useDispatch} from 'react-redux';
-import {commentsAction} from "./actions/commentsAction";
-import {commentsDeleteAction} from "./actions/commentsDeleteAction";
-import {commentsCreateAction} from "./actions/commentsCreateAction";
+import {commentsAction} from "actions/commentsAction";
+import {commentsDeleteAction} from "actions/commentsDeleteAction";
+import {commentsCreateAction} from "actions/commentsCreateAction";
 
 function App(props) {
 	const {comments} = useSelector(state => state.comments) || [];

@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'index.scss';
+import App from 'App';
+import * as serviceWorker from 'serviceWorker';
 
 import {Provider} from 'react-redux';
-import configureStore from './store';
+import configureStore from 'store';
 
 import {createBrowserHistory} from "history";
-import {Router, Route} from 'react-router-dom'
+import {Router, Route} from 'react-router-dom';
 
 
 const history = createBrowserHistory();
